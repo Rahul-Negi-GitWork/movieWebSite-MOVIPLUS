@@ -1,16 +1,31 @@
-# React + Vite
+🎬 MoviPlus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MoviPlus is a movie discovery web app built with React and Vite. Search for movies, browse what's popular right now, and save your favorites for later — all powered by The Movie Database (TMDB) API.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features
+🔍 Search — Look up any movie by title
+🔥 Popular movies — Browse trending titles on load
+❤️ Favorites — Save movies to a favorites list, persisted in localStorage
+🧭 Client-side routing — Navigate between Home and Favorites with React Router
+⚡ Fast dev experience — Built with Vite for instant HMR
+Tech Stack
+React 19
+Vite
+React Router
+TMDB API
+ESLint
+Project Structure
+src/
+├── Components/
+│   ├── Navbar.jsx        # Top navigation bar
+│   └── MovieCard.jsx     # Movie poster card with favorite toggle
+├── Pages/
+│   ├── Home.jsx          # Search + popular movies grid
+│   └── Favorites.jsx     # Saved favorites grid
+├── Context/
+│   └── MovieContext.jsx  # Global state for favorites (localStorage-backed)
+├── Services/
+│   └── api.js            # TMDB API calls (popular movies, search)
+├── css/                  # Component/page-level styles
+├── App.jsx               # Routes + layout
+└── main.jsx               # App entry point
