@@ -15,6 +15,7 @@ React Router
 TMDB API
 ESLint
 Project Structure
+
 src/
 ├── Components/
 │   ├── Navbar.jsx        # Top navigation bar
